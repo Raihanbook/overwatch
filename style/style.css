@@ -1,0 +1,324 @@
+body, html {
+    background-color: #0B7FE3;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Mukta', sans-serif;
+}
+
+h1, h4, p {
+    color: white;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.quote {
+    font-family: 'Mirza', cursive;
+    font-size: 1.2em;
+}
+
+.section-title {
+    text-align: center;
+    width: 100%;
+    background-color: #0B43D9;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    border: 0.5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+    border-radius: 0px 0px 20px 20px;
+    border: 0.5em;
+}
+
+#header-menu {
+    margin-left: auto;
+    text-decoration: none;
+    padding-right: 0.5em;
+}
+
+#header-menu a {
+    display: inline-block;
+    padding: 5px 25px;
+    margin: 0.5em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00A2CC;
+    color: white;
+    transition-duration: 0.5s;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#header-menu a:hover {
+    background-color: #0BE3D4;
+}
+
+.flex-container {
+    display: flex;
+}
+
+section {
+    height: 100vh;
+}
+
+#page-one, #page-two, #page-three, #page-four {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.image {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0BE3D4;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.40);
+}
+
+#page-one figure, #page-three figure {
+    position: relative;
+    border-radius: 20px;
+}
+
+#page-one .overlay {
+    height: 200px;
+    width: 230px;
+}
+
+#page-three .overlay {
+    height: 221px;
+    width: 128px;
+}
+
+#page-one .overlay, #page-three .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #0B7FE3;
+    border-radius: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#page-one .overlay-text {
+    font-size: 2em;
+}
+
+#page-three .overlay-text {
+    font-size: 1.5em;
+}
+
+#page-one .overlay-text, #page-three .overlay-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0BE3D4;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.40);
+}
+
+.lightbox-content p, .lightbox-content h1 {
+    color: #0B7FE3 !important;
+}
+
+.lightbox-content p {
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.lightbox-content div {
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#overview .lightbox-content {
+    width: 55em;
+}
+
+#play-role .lightbox-content, #game-mode .lightbox-content {
+    width: 75em;
+}
+
+#play-role .lightbox-content, #game-mode .lightbox-content, #page-three .lightbox-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#play-role .play-role-lightbox, #game-mode .game-mode-lightbox, #page-three .abilities-lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-role-lightbox-content, .game-mode-lightbox-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 20em !important;
+}
+
+.play-role-lightbox-content figure, .game-mode-lightbox-content figure {
+    margin: 0px;
+}
+
+#page-two {
+    display: none;
+}
+
+#sombra {
+    width: 60em;
+}
+
+#genji, #mei, #mccree, #reaper {
+    display: none;
+    width: 60em;
+}
+
+.brief-intro {
+    flex-flow: column;
+}
+
+.brief-intro p {
+    text-align: justify;
+}
+
+#hero-icons-page-two, #hero-icons-page-four {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#hero-icons-page-two figure, #hero-icons-page-four figure {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#hero-icons-page-two img, #hero-icons-page-four img {
+    transition-duration: 0.5s;
+}
+
+#hero-icons-page-two img:hover, #hero-icons-page-four img:hover {
+    transform: scale(1.5);
+}
+
+#page-three {
+    display: none;
+}
+
+#page-three .fig-image, #page-three .abilities-lightbox figure {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+#page-three .image {
+    width: 8em;
+}
+
+#page-three .abilities-lightbox img {
+    width: 4em;
+}
+
+#page-three .abilities-lightbox .image, #page-three .ability-overview .image {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0BD990;
+    border-radius: 75px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.40);
+}
+
+#page-three .abilities-lightbox img {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#page-three .abilities-lightbox img:hover {
+    transform: scale(1.2);
+}
+
+#page-three .ability-overview div {
+    width: 35em;
+}
+
+.ability-overview {
+    display: none;
+}
+
+#sombra-ability-one, #genji-ability-one, #mei-ability-one, #mccree-ability-one, #reaper-ability-one {
+    display: flex;
+}
+
+#page-four {
+    display: none;
+}
+
+#genji-story, #mei-story, #mccree-story, #reaper-story {
+    display: none;
+}
+
+#sombra-story, #genji-story, #mei-story, #mccree-story, #reaper-story {
+    width: 85em;
+    height: 35em;
+    padding-bottom: 1em;
+}
+
+#page-four .backstory {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+}
+
+footer p {
+    color: #0B7FE3;
+    font-family: 'Mirza', cursive;
+    width: 90em;
+    text-align: justify;
+}

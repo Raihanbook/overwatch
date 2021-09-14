@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header area -->
+<head>
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <link href="style/style.css" rel="stylesheet"> <!-- External CSS used to stylized the website -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- External hosted jquery library used in the website -->
+    <script>window.jQuery || document.write('<script src="js/jquery/jquery-3.5.1.min.js"><\/script>');</script> <!-- Fallback jquery library -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Mukta:wght@500&family=Montserrat+Alternates&family=Mirza&display=swap" rel="stylesheet"> <!-- External hosted fonts used in the website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- External hosted icons used in the website -->
+    <title>Assignment 3 - Overwatch</title> <!-- Title of the website -->
+</head>
+
+<!-- Body area -->
+<body>
+
+    <!-- Semantic tag for header area in the body -->
+    <header>
+        <!-- The logo -->
+        <div class="header">
+            <div> 
+                <img src="media/overwatch-logo-png-4.png" height="100" width="250" alt="Logo"/>  
+            </div>
+        </div>
+        <!-- The menu -->
+        <nav class="menu" id="header-menu">
+            <a id="menu-one">About</a>
+            <a id="menu-two">Heroes</a>
+            <a id="menu-three">Abilities</a>
+            <a id="menu-four">Backstories</a>
+        </nav>
+    </header>
+
+    <!-- Semantic tag used for page one -->
+    <section class="flex-container" id="page-one">
+        <!-- The title for each section/page -->
+        <div class="section-title">
+            <h1>About Overwatch</h1>
+            <h4>- Click one of these cards for brief overview of in-game aspects -</h4>
+        </div>
+
+        <div class="flex-container">
+            <!-- Semantic tag used for Overview's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" id="overview-image" src="media/Annotation-2020-07-31-104854-min.png" height="200" width="230" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                
+                <div class="overlay">
+                    <div class="overlay-text">Overview</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox for the content of the Overview section -->
+            <div class="lightbox" id="overview">
+                <div class="lightbox-content">
+                    <figure>
+                        <img class="lightbox-image" src="media/Overwatch_circle_logo.svg-min.png" height="200" width="230" alt="Overwatch's Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                    </figure>
+                    <div>
+                        <h1>Welcome to Overwatch</h1>
+                        <p>Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic tag used for Play Roles' image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" id="role-image" src="media/Annotation-2020-07-31-105605-min-min.png" height="200" width="230" alt="Play Role Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                
+                <div class="overlay">
+                    <div class="overlay-text">Play <br> Roles</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox for the content of the Play Roles section -->
+            <div class="lightbox" id="play-role">
+                <div class="lightbox-content">
+                    <h1>- PLAYING YOUR ROLE -</h1>
+
+                    <div class="play-role-lightbox">
+                        <div class="play-role-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Attack-min.png" height="200" width="230" alt="Damage Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>DAMAGE</h1>
+                            <p>Damage heroes seek out, engage, and obliterate the enemy with wide-ranging tools, abilities and play styles. Fearsome but fragile, these heroes require backup to survive</p>
+                        </div>
+    
+                        <div class="play-role-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Defense-min.png" height="200" width="230" alt="Tank Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>TANK</h1>
+                            <p>Tank heroes soak damage and shatter fortified positions, like closely grouped enemies and narrow chokepoints. If you’re a tank, you lead the charge</p>
+                        </div>
+    
+                        <div class="play-role-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Support-min.png" height="200" width="230" alt="Support Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>SUPPORT</h1>
+                            <p>Support heroes empower their allies by healing, shielding, boosting damage, and disabling foes. As a support, you’re the backbone of your team’s survival</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic tag used for Game Modes' image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" id="mode-image" src="media/Annotation-2020-07-31-105715-min-min.png" height="200" width="230" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+            
+                <div class="overlay">
+                    <div class="overlay-text">Game <br> Modes</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox for the content of the Game Modes section -->
+            <div class="lightbox" id="game-mode">
+                <div class="lightbox-content">
+                    <h1>- GAME MODES -</h1>
+
+                    <div class="game-mode-lightbox">
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Annotation-2020-08-28-154211-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>PRACTICE RANGE</h1>
+                            <p>Visit a training area and experiment with your abilities against practice bots.</p>
+                        </div>
+
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Annotation-2020-08-28-154211-(1)-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>PLAY/PRACTICE VS A.I.</h1>
+                            <p>Play against AI-controlled opponents on any map you choose.</p>
+                        </div>
+
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Annotation-2020-08-28-154211-(2)-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>QUICK PLAY</h1>
+                            <p>Square off against other players at your skill level.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-mode-lightbox">
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Annotation-2020-08-28-154211-(4)-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>COMPETITIVE PLAY</h1>
+                            <p>Compete against other players and work your way up the ranks.</p>
+                        </div>
+
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media/Annotation-2020-08-28-154211-(3)-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>ARCADE</h1>
+                            <p>Experimental matches with unique and seasonal rules, plus weekly rewards!</p>
+                        </div>
+
+                        <div class="game-mode-lightbox-content">
+                            <figure>
+                                <img class="lightbox-image" src="media//Annotation-2020-08-28-154211-(5)-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "About". Overwatch. https://playoverwatch.com/en-us/about/ -->
+                            </figure>
+                            <h1>CUSTOM GAME</h1>
+                            <p>Change the rules of the game with custom modifiers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semantic tag used for page two -->
+    <section class="flex-container" id="page-two">
+        <!-- The title for each section/page -->
+        <div class="section-title">
+            <h1>Overwatch's Heroes</h1>
+            <h4>- Hover over the icons to the right for hero's brief introduction -</h4>
+        </div>
+
+        <div class="flex-container">
+            <!-- Reaper's section of the current page -->
+            <div class="flex-container" id="reaper">
+                <!-- Reaper's image -->
+                <figure>
+                    <img src="media/Reaper-Full-min.png" height="450" width="270" alt="Overview Image"> <!-- Blizzard. 2020. "Overwatch". Overwatch. https://playoverwatch.com/en-us/ -->
+                </figure>
+    
+                <!-- Reaper's brief info -->
+                <div class="brief-intro">
+                    <h1>Reaper</h1>
+                    <p class="quote">
+                        <i>" DEATH WALKS AMONG YOU. "</i>
+                    </p>
+                    <p>
+                        Hellfire Shotguns, the ghostly ability to become immune to damage, and the power to step between shadows 
+                        make Reaper one of the deadliest beings on Earth.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- McCree's section of the current page -->
+            <div class="flex-container" id="mccree">
+                <!-- McCree's image -->
+                <figure>
+                    <img src="media/McCree-Full.png" height="450" width="250" alt="Overview Image"> <!-- Blizzard. 2020. "Overwatch". Overwatch. https://playoverwatch.com/en-us/ -->
+                </figure>
+    
+                <!-- McCree's brief info -->
+                <div class="brief-intro">
+                    <h1>McCree</h1>
+                    <p class="quote">
+                        <i>" JUSTICE AIN'T GONNA DISPENSE ITSELF. "</i>
+                    </p>
+                    <p>
+                        Armed with his Peacekeeper revolver, McCree takes out targets with deadeye precision and dives out of 
+                        danger with eagle-like speed.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mei's section of the current page -->
+            <div class="flex-container" id="mei">
+                <!-- Mei's image -->
+                <figure>
+                    <img src="media/Mei-Full.png" height="450" width="300" alt="Overview Image"> <!-- Blizzard. 2020. "Overwatch". Overwatch. https://playoverwatch.com/en-us/ -->
+                </figure>
+    
+                <!-- Mei's brief info -->
+                <div class="brief-intro">
+                    <h1>Mei</h1>
+                    <p class="quote">
+                        <i>" OUR WORLD IS WORTH FIGHTING FOR. "</i>
+                    </p>
+                    <p>
+                        Mei’s weather-altering devices slow opponents and protect locations. Her Endothermic Blaster unleashes 
+                        damaging icicles and frost streams, and she can Cryo-Freeze herself to guard against counterattacks, or 
+                        obstruct the opposing team's movements with an Ice Wall.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Genji's section of the current page -->
+            <div class="flex-container" id="genji">
+                <!-- Genji's image -->
+                <figure>
+                    <img src="media/Genji-Full.png" height="450" width="270" alt="Overview Image"> <!-- Blizzard. 2020. "Overwatch". Overwatch. https://playoverwatch.com/en-us/ -->
+                </figure>
+    
+                <!-- Genji's brief info -->
+                <div class="brief-intro">
+                    <h1>Genji</h1>
+                    <p class="quote">
+                        <i>" EVEN IF I SACRIFICE MY BODY, I WILL NEVER SACRIFICE MY HONOR. "</i>
+                    </p>
+                    <p>
+                        Genji flings precise and deadly Shuriken at his targets, and uses his technologically-advanced katana 
+                        to deflect projectiles or deliver a Swift Strike that cuts down enemies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sombra's section of the current page -->
+            <div class="flex-container" id="sombra">
+                <!-- Sombra's image -->
+                <figure>
+                    <img src="media/Sombra-Full.png" height="450" width="180" alt="Overview Image"> <!-- Blizzard. 2020. "Overwatch". Overwatch. https://playoverwatch.com/en-us/ -->
+                </figure>
+    
+                <!-- Sombra's brief info -->
+                <div class="brief-intro">
+                    <h1>Sombra</h1>
+                    <p class="quote">
+                        <i>" EVERYTHING CAN BE HACKED… AND EVERYONE. "</i>
+                    </p>
+                    <p>
+                        Stealth and debilitating attacks make Sombra a powerful infiltrator. Her hacking can disrupt her enemies, 
+                        ensuring they're easier to take out, while her EMP provides the upper hand against multiple foes at once. 
+                        Sombra’s ability to Translocate and camouflage herself makes her a hard target to pin down.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero icons -->
+            <div class="flex-container" id="hero-icons-page-two">
+                <!-- Sombra's icon -->
+                <figure>
+                    <img class="image" src="media/Sombra.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Genji's icon -->
+                <figure>
+                    <img class="image" src="media/Genji.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Mei's icon -->
+                <figure>
+                    <img class="image" src="media/Mei.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Mccree's icon -->
+                <figure>
+                    <img class="image" src="media/McCree-min.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Reaper's icon -->
+                <figure>
+                    <img class="image" src="media/Reaper-min.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semantic tag used for page three -->
+    <section class="flex-container" id="page-three">
+        <!-- The title for each section/page -->
+        <div class="section-title">
+            <h1>Heroes' Abilities</h1>
+            <h4>- Click on a hero for a brief overview of their abilities -</h4>
+        </div>
+
+        <div class="flex-container">
+            <!-- Semantic tag used for Sombra's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" src="media/Sombra.png" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                
+                <div class="overlay">
+                    <div class="overlay-text">Sombra</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox used for Sombra's abilities -->
+            <div class="lightbox" id="sombra-abilities">
+                <div class="lightbox-content">
+                    <h1>- Sombra's Abilities -</h1>
+
+                    <!-- Icons for Sombra's abilites -->
+                    <div class="abilities-lightbox">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-5-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                    </div>
+
+                    <!-- One of Sombra's abilities with its icon and info -->
+                    <div class="ability-overview" id="sombra-ability-one">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>MACHINE PISTOL</h1>
+                            <p>
+                                Sombra’s fully-automatic machine pistol fires in a short-range spread.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Sombra's abilities with its icon and info -->
+                    <div class="ability-overview" id="sombra-ability-two">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>HACK</h1>
+                            <p>
+                                Sombra hacks enemies to temporarily stop them from using their abilities, 
+                                or hacks first aid kits to make them useless to her opponents.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Sombra's abilities with its icon and info -->
+                    <div class="ability-overview" id="sombra-ability-three">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>STEALTH</h1>
+                            <p>
+                                Sombra becomes invisible, during which her speed is boosted considerably. Attacking, using 
+                                offensive abilities, or taking damage disables her camouflage. Sombra cannot capture objectives 
+                                while invisible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Sombra's abilities with its icon and info -->
+                    <div class="ability-overview" id="sombra-ability-four">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>TRANSLOCATOR</h1>
+                            <p>
+                                Sombra tosses out a translocator beacon. She can instantly return to the beacon’s location while 
+                                it is active (including when it’s in mid-flight).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Sombra's abilities with its icon and info -->
+                    <div class="ability-overview" id="sombra-ability-five">
+                        <figure>
+                            <img class="image" src="media/Sombra-Ability-5-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>EMP</h1>
+                            <p>
+                                Sombra discharges electromagnetic energy in a wide radius, destroying enemy barriers and shields 
+                                and hacking all opponents caught in the blast.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic tag used for Genji's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" src="media/Genji.png" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                
+                <div class="overlay">
+                    <div class="overlay-text">Genji</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox used for Genji's abilities -->
+            <div class="lightbox" id="genji-abilities">
+                <div class="lightbox-content">
+                    <h1>- Genji's Abilities -</h1>
+
+                    <!-- Icons for Genji's abilites -->
+                    <div class="abilities-lightbox">
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+                    </div>
+
+                    <!-- One of Genji's abilities with its icon and info -->
+                    <div class="ability-overview" id="genji-ability-one">
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>SHURIKEN</h1>
+                            <p>
+                                Genji looses three deadly throwing stars in quick succession. Alternatively, he can throw three 
+                                shuriken in a wider spread.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Genji's abilities with its icon and info -->
+                    <div class="ability-overview" id="genji-ability-two">
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>DEFLECT</h1>
+                            <p>
+                                With lightning-quick swipes of his sword, Genji reflects an oncoming projectile and sends it 
+                                rebounding towards his opponent.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Genji's abilities with its icon and info -->
+                    <div class="ability-overview" id="genji-ability-three">
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>SWIFT STRIKE</h1>
+                            <p>
+                                Genji darts forward, slashing with his katana and passing through foes in his path. If Genji eliminates 
+                                a target, he can instantly use this ability again.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Genji's abilities with its icon and info -->
+                    <div class="ability-overview" id="genji-ability-four">
+                        <figure>
+                            <img class="image" src="media/Genji-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>DRAGONBLADE</h1>
+                            <p>
+                                Genji brandishes his katana for a brief period of time. Until he sheathes his sword, Genji can deliver 
+                                killing strikes to any targets within his reach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic tag used for Mei's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" src="media/Mei.png" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+            
+                <div class="overlay">
+                    <div class="overlay-text">Mei</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox used for Mei's abilities -->
+            <div class="lightbox" id="mei-abilities">
+                <div class="lightbox-content">
+                    <h1>- Mei's Abilities -</h1>
+
+                    <!-- Icons for Mei's abilites -->
+                    <div class="abilities-lightbox">
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+                    </div>
+
+                    <!-- One of Mei's abilities with its icon and info -->
+                    <div class="ability-overview" id="mei-ability-one">
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>ENDOTHERMIC BLASTER</h1>
+                            <p>
+                                Mei’s blaster unleashes a concentrated, short-range stream of frost that damages, slows, and 
+                                ultimately freezes enemies in place. Mei can also use her blaster to shoot icicle-like projectiles 
+                                at medium range.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Mei's abilities with its icon and info -->
+                    <div class="ability-overview" id="mei-ability-two">
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>CRYO-FREEZE</h1>
+                            <p>
+                                Mei instantly surrounds herself with a block of thick ice. She heals and ignores damage while encased, 
+                                but cannot move or use abilities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Mei's abilities with its icon and info -->
+                    <div class="ability-overview" id="mei-ability-three">
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>ICE WALL</h1>
+                            <p>
+                                Mei generates an enormous ice wall that obstructs lines of sight, stops movement, and blocks attacks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Mei's abilities with its icon and info -->
+                    <div class="ability-overview" id="mei-ability-four">
+                        <figure>
+                            <img class="image" src="media/Mei-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>BLIZZARD</h1>
+                            <p>
+                                Mei deploys a weather-modification drone that emits gusts of wind and snow in a wide area. Enemies 
+                                caught in the blizzard are slowed and take damage; those who linger too long are frozen solid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <!-- Semantic tag used for McCree's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" src="media/McCree-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+            
+                <div class="overlay">
+                    <div class="overlay-text">McCree</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox used for McCree's abilities -->
+            <div class="lightbox" id="mccree-abilities">
+                <div class="lightbox-content">
+                    <h1>- McCree's Abilities -</h1>
+
+                    <!-- Icons for McCree's abilites -->
+                    <div class="abilities-lightbox">
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+                    </div>
+
+                    <!-- One of McCree's abilities with its icon and info -->
+                    <div class="ability-overview" id="mccree-ability-one">
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>PEACEKEEPER</h1>
+                            <p>
+                                McCree fires off a round from his trusty six-shooter. He can fan the Peacekeeper’s hammer to 
+                                swiftly unload the entire cylinder.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of McCree's abilities with its icon and info -->
+                    <div class="ability-overview" id="mccree-ability-two">
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>COMBAT ROLL</h1>
+                            <p>
+                                McCree dives in the direction he’s moving, effortlessly reloading his Peacekeeper in the process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of McCree's abilities with its icon and info -->
+                    <div class="ability-overview" id="mccree-ability-three">
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>FLASHBANG</h1>
+                            <p>
+                                McCree heaves a blinding grenade that explodes shortly after it leaves his hand. The blast 
+                                staggers enemies in a small radius.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of McCree's abilities with its icon and info -->
+                    <div class="ability-overview" id="mccree-ability-four">
+                        <figure>
+                            <img class="image" src="media/McCree-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>DEADEYE</h1>
+                            <p>
+                                Focus. Mark. Draw. McCree takes a few precious moments to aim; when he’s ready to fire, he shoots 
+                                every enemy in his line of sight. The weaker his targets are, the faster he’ll line up a killshot.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic tag used for Reaper's image and its overlay text -->
+            <figure class="fig-image">
+                <img class="image" src="media/Reaper-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+            
+                <div class="overlay">
+                    <div class="overlay-text">Reaper</div>
+                </div>
+            </figure>
+
+            <!-- Lightbox used for Reaper's abilities -->
+            <div class="lightbox" id="reaper-abilities">
+                <div class="lightbox-content">
+                    <h1>- Reaper's Abilities -</h1>
+
+                    <!-- Icons for Reaper's abilites -->
+                    <div class="abilities-lightbox">
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+                    </div>
+
+                    <!-- One of Reaper's abilities with its icon and info -->
+                    <div class="ability-overview" id="reaper-ability-one">
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-1-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>HELLFIRE SHOTGUNS</h1>
+                            <p>
+                                Reaper tears enemies apart with twin shotguns.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Reaper's abilities with its icon and info -->
+                    <div class="ability-overview" id="reaper-ability-two">
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-2-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>WRAITH FORM</h1>
+                            <p>
+                                Reaper becomes a shadow for a short period of time. While in this form, he takes no damage and is 
+                                able to pass through enemies, but cannot fire his weapons or use other abilities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Reaper's abilities with its icon and info -->
+                    <div class="ability-overview" id="reaper-ability-three">
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-3-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>SHADOW STEP</h1>
+                            <p>
+                                After marking a destination, Reaper disappears and reappears at that location.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- One of Reaper's abilities with its icon and info -->
+                    <div class="ability-overview" id="reaper-ability-four">
+                        <figure>
+                            <img class="image" src="media/Reaper-Ability-4-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                        </figure>
+                        
+                        <div>
+                            <h1>DEATH BLOSSOM</h1>
+                            <p>
+                                In a blur of motion, Reaper empties both Hellfire Shotguns at breakneck speed, 
+                                dealing massive damage to all nearby enemies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semantic tag used for page three -->
+    <section class="flex-container" id="page-four">
+        <!-- The title for each section/page -->
+        <div class="section-title">
+            <h1>Heroes' Backstories</h1>
+            <h4>- Hover over the icons to the right for hero's backstory -</h4>
+        </div>
+
+        <div class="flex-container">
+            <!-- Reaper's backstory -->
+            <div class="flex-container" id="reaper-story">
+                <figure>
+                    <img src="media/reaper-concept-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Reaper". Overwatch. https://playoverwatch.com/en-us/heroes/reaper/ -->
+                </figure>
+    
+                <div class="backstory">
+                    <h1>- Real Name: Unknown, Age: Unknown -</h1>
+                    <p>
+                        Some speak of a black-robed terrorist known only as the Reaper. His identity and motives are a mystery. 
+                        What is known is that where he appears, death follows.
+                    </p>
+                    <p>
+                        The Reaper is an extremely volatile mercenary, a ruthless and remorseless killer responsible for terrorist 
+                        attacks across the world. He has fought in many armed conflicts in the last decades, showing no loyalty to 
+                        any cause or organization.
+                    </p>
+                    <p>
+                        Survivors have described a black shadow ghosting unscathed through the most hellish battlefields. The few 
+                        bodies recovered of those he kills are pale, empty husks drained of life, their cells showing signs of 
+                        intense degradation. It is possible that he is a byproduct of failed genetic alteration which forces his 
+                        cells to simultaneously decay and regenerate at a hyper-accelerated rate.
+                    </p>
+                    <p>
+                        Those attempting to track his movements have begun to see a pattern in his appearances. They believe that 
+                        Reaper is hunting former Overwatch agents and systematically eliminating them.
+                    </p>
+                </div>
+            </div>
+
+            <!-- McCree's backstory -->
+            <div class="flex-container" id="mccree-story">
+                <figure>
+                    <img src="media/mccree-concept-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "McCree". Overwatch. https://playoverwatch.com/en-us/heroes/mccree/ -->
+                </figure>
+    
+                <div class="backstory">
+                    <h1>- Real Name: Jesse McCree, Age: 37 -</h1>
+                    <p>
+                        Armed with his Peacekeeper revolver, the outlaw Jesse McCree doles out justice on his own terms.
+                    </p>
+                    <p>
+                        McCree had already made a name for himself as a member of the notorious Deadlock Gang, which trafficked in 
+                        illicit weapons and military hardware throughout the American Southwest, when he and his associates were 
+                        busted in an Overwatch sting operation. With his expert marksmanship and resourcefulness, he was given the 
+                        choice between rotting in a maximum-security lockup and joining Blackwatch, Overwatch's covert ops division. He chose the latter.
+                    </p>
+                    <p>
+                        Although he was initially cynical, he came to believe that he could make amends for his past sins by 
+                        righting the injustices of the world. McCree appreciated the flexibility afforded to the clandestine 
+                        Blackwatch, unhindered by bureaucracy and red tape. But as Overwatch's influence waned, rogue elements 
+                        within Blackwatch sought to bring down the organization and turn it to their own ends. Wanting no part of 
+                        the infighting, McCree set off alone and went underground.
+                    </p>
+                    <p>
+                        He resurfaced several years later as a gunslinger for hire. But while McCree's talents are sought after by 
+                        parties great and small, he fights only for causes he believes are just.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mei's backstory -->
+            <div class="flex-container" id="mei-story">
+                <figure>
+                    <img src="media/mei-concept-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Mei". Overwatch. https://playoverwatch.com/en-us/heroes/mei/ -->
+                </figure>
+    
+                <div class="backstory">
+                    <h1>- Real Name: Mei-Ling Zhou, Age: 31 -</h1>
+                    <p>
+                        Mei is a scientist who has taken the fight to preserve the environment into her own hands.
+                    </p>
+                    <p>
+                        Though many blamed the planet's escalating, unexplained climate phenomena on the advent of new 
+                        technologies, the rapidly growing omnic population, and drastically increased consumption of resources, 
+                        the true cause remained unknown. To find a solution, Overwatch established a series of eco-Watchpoints at 
+                        remote, critical locations worldwide.
+                    </p>
+                    <p>
+                        Mei-Ling Zhou was a member of this multiyear initiative. A peerless climatologist, she had introduced 
+                        cutting-edge innovations in the field of climate manipulation that protected at-risk areas in Asia and 
+                        beyond. She was assigned to the program's monitoring station at Watchpoint: Antarctica when disaster 
+                        struck: a sudden, catastrophic polar storm battered the installation and cut it off from the outside 
+                        world, leaving the facility damaged and the scientists stranded. As their supplies dwindled, they entered 
+                        cryostasis in a last-ditch effort to survive until a rescue attempt could be made.
+                    </p>
+                    <p>
+                        But that rescue never came. It was years later when the team's cryogenics chamber was finally discovered. 
+                        Mei, still in hibernation, was the only survivor. The world Mei awoke to had gone through considerable 
+                        changes: Overwatch was no more, the serious climate issues had worsened, and none of the eco-Watchpoints 
+                        were in operation. Any clues that they had uncovered were lost.
+                    </p>
+                    <p>
+                        Mei has decided to continue her work on her own. Equipped with a portable version of her 
+                        climate-manipulation technology, she travels around the world, hoping to re-establish the eco-network and 
+                        track down the causes of the threats to the planet's ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Genji's backstory -->
+            <div class="flex-container" id="genji-story">
+                <figure>
+                    <img src="media/genji-concept-min.png" alt="Overview Image"> <!-- Blizzard. 2020. "Genji". Overwatch. https://playoverwatch.com/en-us/heroes/genji/ -->
+                </figure>
+    
+                <div class="backstory">
+                    <h1>- Real Name: Genji Shimada, Age: 35 -</h1>
+                    <p>
+                        The cyborg Genji Shimada has made peace with the augmented body he once rejected, and in doing so, he has 
+                        discovered a higher humanity.
+                    </p>
+                    <p>
+                        As the youngest son of the master of the Shimada ninja clan, Genji lived a life of luxury and privilege. He 
+                        had little interest in the family's illegal businesses, and although he excelled at and enjoyed his ninja 
+                        training, he spent most of his time pursuing a playboy lifestyle. Many within the clan considered the 
+                        carefree Genji to be a dangerous liability, and they resented his father for coddling and protecting him. 
+                        Following the clan leader's untimely death, Genji's older brother, Hanzo, demanded that Genji take a more 
+                        active role in their late father's empire. Genji refused, enraging Hanzo. The tension between the brothers 
+                        built to a violent confrontation that left Genji on the verge of dying.
+                    </p>
+                    <p>
+                        Hanzo believed that he had killed his brother, but Genji was rescued by Overwatch and the intervention of 
+                        Dr. Angela Ziegler. The global security force saw Genji as a potential asset in its ongoing operations to 
+                        combat the Shimada clan. As Genji's injuries left him clinging to life, Overwatch offered to rebuild his 
+                        body in exchange for his help. He was put through an extensive process of cyberization, which enhanced his 
+                        natural speed and agility and augmented his superlative ninja skills. Transformed into a living weapon, 
+                        Genji single-mindedly set about the task of dismantling his family's criminal empire.
+                    </p>
+                    <p>
+                        But as time passed, Genji felt increasingly at war with himself. He was repulsed by the mechanical parts of 
+                        his body and could not come to grips with what he had become. When his mission was complete, he abandoned 
+                        Overwatch and wandered the world in search of meaning. He drifted for many years before crossing paths with 
+                        the omnic monk Zenyatta. Though Genji initially rejected Zenyatta's wisdom, the benevolent omnic would not 
+                        be deterred. In time, Zenyatta became his mentor, and under the monk's tutelage, Genji reconciled his dual 
+                        existence as both man and machine. He learned to accept that although he had a cyborg body, his human soul 
+                        was intact, and he came to see his new form as a gift and a unique strength.
+                    </p>
+                    <p>
+                        Now, for the first time in his life, Genji is free. Even he cannot say where his path will ultimately lead.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sombra's backstory -->
+            <div class="flex-container" id="sombra-story">
+                <figure>
+                    <img src="media/sombra-concept-min.png" height="450" width="450" alt="Overview Image"> <!-- Blizzard. 2020. "Sombra". Overwatch. https://playoverwatch.com/en-us/heroes/sombra/ -->
+                </figure>
+    
+                <div class="backstory">
+                    <h1>- Real Name: ░░░░░░, Age: 30 -</h1>
+                    <p>
+                        One of the world's most notorious hackers, Sombra uses information to manipulate those in power.
+                    </p>
+                    <p>
+                        Long before she took up the alias "Sombra," ░░░░░░ was among the thousands of children who were 
+                        left orphaned in the aftermath of the Omnic Crisis. With much of her country's infrastructure 
+                        destroyed, she survived by utilizing her natural gifts with hacking and computers.
+                    </p>
+                    <p>
+                        After ░░░░░░ was taken in by Mexico's Los Muertos gang, she aided it in its self-styled revolution 
+                        against the government. Los Muertos believed that the rebuilding of Mexico had primarily benefited 
+                        the rich and the influential, leaving behind those who were most in need of assistance.
+                    </p>
+                    <p>
+                        Following her many conquests, ░░░░░░ was supremely confident in her skills, but she was caught 
+                        unprepared when she stumbled into the web of a global conspiracy—one that had also noticed her. 
+                        With her security irreparably compromised, ░░░░░░ was forced to delete all traces of her identity 
+                        and went into hiding.
+                    </p>
+                    <p>
+                        She later reemerged as Sombra, upgraded and determined to find out the truth behind the conspiracy 
+                        she had uncovered. Sombra launched an even more audacious string of hacks, and her exploits earned 
+                        her no shortage of admirers, including Talon. She joined the organization's ranks and is believed 
+                        to have contributed to its massive cyberattacks against corporations with strong ties to their 
+                        governments. These efforts incited a popular revolution in Mexico against LumériCo and breached 
+                        the security of Volskaya Industries, the manufacturing arm of Russia's anti-omnic defense.
+                    </p>
+                    <p>
+                        Now, with Talon's extensive resources to call upon, Sombra can focus on her true goal: to unravel the 
+                        conspiracy and use the power behind it to her own ends.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero icons -->
+            <div class="flex-container" id="hero-icons-page-four">
+                <!-- Sombra icons -->
+                <figure>
+                    <img class="image" src="media/Sombra.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Genji icons -->
+                <figure>
+                    <img class="image" src="media/Genji.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Mei icons -->
+                <figure>
+                    <img class="image" src="media/Mei.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Mccree icons -->
+                <figure>
+                    <img class="image" src="media/McCree-min.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+
+                <!-- Reaper icons -->
+                <figure>
+                    <img class="image" src="media/Reaper-min.png" height="60" width="40" alt="Overview Image"> <!-- Blizzard. 2020. "Heroes". Overwatch. https://playoverwatch.com/en-us/heroes/ -->
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex-container">
+        <p>
+            This website has been created as part of an assignment in an approved course of study for Curtin University and 
+            contains copyright material not created by the author. All copyright material used remains copyright of the 
+            respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). 
+            No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+        </p>
+    </footer>
+
+    <!-- External Javascript used in the website -->
+    <script src="js/js.js"></script>
+
+</body>
